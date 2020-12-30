@@ -1,0 +1,85 @@
+.appbody {
+  background-color: #557aff;
+  border-radius: 20px;
+
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  padding: 20px;
+}
+
+.resultbox {
+  background-color: #d0e8f2;
+  border-radius: 5px;
+  font-size: 1.5em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.resultbox div {
+  height: 1.5em;
+}
+
+.resultbox img {
+  position: absolute;
+  left: 20px;
+}
+
+.memory {
+  color: rgb(117, 126, 173);
+}
+.btnbox {
+  flex-grow: 1;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "seven eight nine divide"
+    "four five six times"
+    "one two three minus"
+    "zero comma equal plus";
+  gap: 6px;
+}
+
+.btn {
+  background-color: #d0e8f2;
+  border-radius: 5px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  background-color: #bbd0da;
+}
+
+.btn:active {
+  background-color: #98b1bd;
+}
+
+@media only screen and (max-width: 600px) {
+  .resultbox {
+    font-size: 0.8em;
+
+    height: 120px;
+  }
+
+  .resultbox img {
+    width: 60px;
+  }
+}
